@@ -1,0 +1,113 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #f6f8fb;
+    color: #1f2933;
+    line-height: 1.8;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+/* =========================
+   SECTION STYLING
+========================= */
+section {
+    background-color: #ffffff;
+    padding: 50px 60px;
+    border-radius: 14px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+    max-width: 780px;
+}
+
+strong {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+em {
+    color: #334155;
+    font-style: italic;
+}
+
+/* =========================
+   CONTENT FLOW
+========================= */
+section p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 1024px) {
+    section {
+        padding: 40px 45px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 50px 18px;
+    }
+
+    section {
+        padding: 30px 25px;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}

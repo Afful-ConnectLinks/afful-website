@@ -1,0 +1,234 @@
+/* ===============================
+   GLOBAL RESET & VARIABLES
+================================ */
+:root {
+  --primary: #0f172a;
+  --secondary: #2563eb;
+  --accent: #f59e0b;
+  --soft-accent: #22c55e;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+  --bg-light: #f8fafc;
+  --gradient-main: linear-gradient(90deg, #2563eb, #22c55e, #f59e0b);
+  --glass: rgba(255, 255, 255, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Inter", sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+/* ===============================
+   NAVIGATION BAR
+================================ */
+image{
+width: 100px;
+height: 100px;
+}
+nav {
+  background: linear-gradient(90deg, #020617, #020617ee);
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.0rem;
+  list-style: none;
+  justify-content: center;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   INTRO SECTION
+================================ */
+.intro {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+/* ===============================
+   MAIN HEADING (H1)
+================================ */
+.intro h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1.3;
+}
+
+/* First letter of EVERY WORD */
+.intro h1 span {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   PARAGRAPHS
+================================ */
+.intro p {
+  font-size: 1.05rem;
+  margin-bottom: 1.8rem;
+  color: var(--text-light);
+  max-width: 900px;
+}
+
+/* Textured first letter */
+.intro p::first-letter {
+  font-size: 2.8rem;
+  font-weight: 700;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+  background: linear-gradient(135deg, #2563eb, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   SUB-HEADINGS (H2)
+================================ */
+.intro h2 {
+  margin: 3rem 0 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--glass);
+  border-left: 6px solid var(--secondary);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+/* Layer effect */
+.intro h2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Textured first letter of sub-headings */
+.intro h2::first-letter {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.site-footer {
+  background: #020617;
+  color: #e5e7eb;
+  padding: 4rem 2rem 2rem;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.0rem;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-column p {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: #cbd5f5;
+}
+
+.footer-column p:hover {
+  color: #ffffff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+/* ===============================
+   IMAGES
+================================ */
+.site-footer img {
+  max-width: 100px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.4);
+}
+
+.image-row {
+  display: flex;
+  gap: 3px;              /* spacing between images */
+  align-items: center;    /* vertical alignment */
+}
+.logo{
+  transform: translateY(-40x);
+}

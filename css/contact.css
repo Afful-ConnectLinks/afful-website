@@ -1,0 +1,109 @@
+/* =========================
+   GLOBAL BASE STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTACT CONTAINER
+========================= */
+.contact-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+.contact-container h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+/* =========================
+   CONTACT METHODS WRAPPER
+========================= */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 35px;
+}
+
+/* =========================
+   INDIVIDUAL CONTACT METHOD
+========================= */
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.05rem;
+    padding: 15px 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-method:hover {
+    background-color: #eef2ff;
+}
+
+/* =========================
+   LINKS
+========================= */
+.contact-method a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER NOTE
+========================= */
+.footer-note {
+    text-align: center;
+    margin-top: 45px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-method {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}

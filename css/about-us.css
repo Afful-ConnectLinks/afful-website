@@ -1,0 +1,157 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+nav {
+    background: #0a2540;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #0a2540, #133b5c);
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container {
+    max-width: 1100px;
+    margin: -3rem auto 4rem;
+    padding: 0 1.5rem;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+    background: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #0a2540;
+    border-left: 5px solid #0072ff;
+    padding-left: 0.8rem;
+}
+
+/* =========================
+   PARAGRAPH FIRST LETTER
+========================= */
+.section p::first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    padding-right: 0.5rem;
+    margin-top: 0.3rem;
+    background: linear-gradient(135deg, #00c6ff, #0072ff, #7f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   LISTS
+========================= */
+.section ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.section li {
+    margin-bottom: 0.6rem;
+    position: relative;
+}
+
+.section li::marker {
+    color: #0072ff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #0a2540;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 2rem 1.5rem;
+    }
+
+    .section p::first-letter {
+        font-size: 3rem;
+    }
+}

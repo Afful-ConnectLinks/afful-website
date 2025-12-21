@@ -1,0 +1,157 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #1f2933;
+    line-height: 1.7;
+    padding: 30px;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1, h2, h3 {
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 25px;
+}
+
+p {
+    max-width: 850px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+header p {
+    color: #d1d5db;
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* =========================
+   SECTION STYLING
+========================= */
+section {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   LISTS
+========================= */
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   SERVICE HEADINGS
+========================= */
+section h3 {
+    border-left: 4px solid #2563eb;
+    padding-left: 12px;
+}
+
+/* =========================
+   HR DIVIDER
+========================= */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+    margin: 50px 0;
+}
+
+/* =========================
+   VALUE PROPOSITION LIST
+========================= */
+section ul li::marker {
+    color: #2563eb;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+section:last-of-type p strong {
+    color: #2563eb;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header, section {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

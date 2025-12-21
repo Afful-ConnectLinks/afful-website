@@ -1,0 +1,22 @@
+/* components.css */
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

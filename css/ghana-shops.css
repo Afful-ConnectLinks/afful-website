@@ -1,0 +1,36 @@
+/* Ghana Shop Styles */
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+}
+
+section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #006b3f; /* Ghana green */
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 1.4rem;
+  text-align: justify;
+}
+
+/* Stylish first letter (drop cap) */
+section p::first-letter {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fcd116; /* Ghana gold */
+  float: left;
+  line-height: 1;
+  margin-right: 0.4rem;
+  padding-top: 0.2rem;
+  font-family: "Georgia", serif;
+}

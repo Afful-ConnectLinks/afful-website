@@ -1,0 +1,149 @@
+/* ================================
+   GLOBAL RESET & BASE STYLES
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f8f9fb;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #0a2540;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 2rem 0 0.8rem;
+    color: #0a2540;
+}
+
+p {
+    max-width: 900px;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ================================
+   SECTION LAYOUT
+================================ */
+section {
+    padding: 4rem 6%;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #ffffff;
+}
+
+section:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* ================================
+   LIST STYLES
+================================ */
+ul {
+    list-style: none;
+    max-width: 900px;
+    margin-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Custom bullet */
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 0.9rem;
+}
+
+/* ================================
+   SERVICE GROUPING
+================================ */
+#affiliate-marketing h2,
+#website-design h2,
+#blog-writing h2,
+#content-writing h2,
+#data-analysis h2 {
+    border-left: 4px solid #2563eb;
+    padding-left: 0.8rem;
+}
+
+/* ================================
+   CALL TO ACTION (OPTIONAL)
+================================ */
+.cta {
+    margin-top: 2.5rem;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #1e40af;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 5%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 2.5rem 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
